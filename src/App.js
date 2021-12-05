@@ -7,7 +7,8 @@ import Products from './pages/Products';
 import Borrowbooks from './components/borrowbooks';
 import '../src/components/table.css'
 import Noti from './components/noti';
-  // function test(){
+import Navbar from './components/Sidebar';
+// function test(){
   //   return(
   //     <h1>Hello</h1>
   //   )
@@ -42,7 +43,7 @@ function App() {
   return (
    <>
       {key=="1223"?  <Router>
-  <Sidebar></Sidebar>
+
   <div className='nd'  style={{height:'85%', display:'flex',flexDirection:'column-reverse',justifyContent:'center'}}>
       <Routes >
    
