@@ -5,34 +5,35 @@ import styled from '../components/inpuat.css'
 import Popup from 'reactjs-popup';
 import Addbook from '../components/addbook';
 import Deletebook from '../components/deletelebook';
-function Home() {
+function Home({props}) {
 
-  const [user,setUser] = useState('')
-  const [pass, setPass] = useState('')
+
   const [data,setData] = useState([])
   const [isLoaded, setisLoaded] = useState(false);
-  const userChange = async (e)=>{
-   await setUser(e.target.value)
-   e.preventDefault();
-
-  }
-  const passChange = async (e)=>{
-   await setPass(e.target.value)
-   e.preventDefault();
-
-  }
+  const [req, setReq] = useState(props);
   useEffect(()=>{
-    axios.get('https://server-pnhmanager.herokuapp.com/api/getbooks').then(result=>{
+    console.log(req);
+    if(req==null){
+    axios.get('http://localhost:5000/api/getbooks').then(result=>{
       let a = result.data;
       setData(a);
       setisLoaded(true);
     })
+  }
+  else{
+    let aa=req;
+    axios.post('http://localhost:5000/api/category',{category: aa}).then(result=>{
+      let a = result.data;
+      setData(a);
+      setisLoaded(true);
+    })
+  }
   })
   function renderBookData(){
     return data.map((data, index) => {
       const { _id, url, title } = data
       return (
-      <Popup trigger={        <div key={_id.toString()} className="gallery">
+      <Popup key={_id.toString()} trigger={        <div  className="gallery">
 
         <img src={url} alt="Forest" width="600" height="400"></img>
       <div className="desc">{title}</div>

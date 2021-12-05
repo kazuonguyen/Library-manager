@@ -12,7 +12,7 @@ const Deletebook = ( {close,kk,tt}) => {
     let a=id;
 
     setLoading("Getting data")
-    axios.post("https://server-pnhmanager.herokuapp.com/api/deletebook", {id:a}).then((result)=>{
+    axios.post("http://localhost:5000/api/deletebook", {id:a}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
@@ -24,7 +24,6 @@ const Deletebook = ( {close,kk,tt}) => {
     </button>
   
   
-  <div className="header">  </div>
   
     <div className="content" >
      <h1 style={{display:'flex',justifyContent:'center'}}>Xác nhận xoá sách {title}</h1>

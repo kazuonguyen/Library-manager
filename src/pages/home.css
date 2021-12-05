@@ -6,10 +6,10 @@ a {
   text-decoration: none !important;
 }
 a:link, a:visited {
-  color: black !important; 
+  color: black ; 
 }
 a:hover {
-  color: black !important;
+  color: black ;
 }
 body {
   background: linear-gradient(45deg, rgba(66, 183, 245, 0.8) 0%, rgba(66, 245, 189, 0.4) 100%);

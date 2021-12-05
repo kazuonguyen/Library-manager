@@ -7,7 +7,6 @@ import Products from './pages/Products';
 import Borrowbooks from './components/borrowbooks';
 import '../src/components/table.css'
 import Noti from './components/noti';
-import Sidebar from './components/Sidebar123';
   // function test(){
   //   return(
   //     <h1>Hello</h1>
@@ -43,13 +42,17 @@ function App() {
   return (
    <>
       {key=="1223"?  <Router>
-  <Sidebar></Sidebar>
+  <Navbar ></Navbar>
   <div className='nd'  style={{height:'85%', display:'flex',flexDirection:'column-reverse',justifyContent:'center'}}>
       <Routes >
    
-      <Route exact path='/'    element={<Home/>}/>
+      <Route exact path='/'    element={<Home props={null}/>}/>
+      <Route exact path='/abc'    element={<Home props="ABC"/>}/>
+      <Route exact path='/sgk'    element={<Home props="Sách giáo khoa" key={window.location.pathname}/>}/>
+      <Route exact path='/truyentranh'    element={<Home props="Truyện tranh" key={window.location.pathname}/>}/>
+      <Route exact path='/khoahoc'    element={<Home props="Khoa học" key={window.location.pathname}/>}/>
 
-          <Route path='/products' element={<Borrowbooks/>}/> 
+          <Route path='/products' element={<Borrowbooks props={null}/>}/> 
          <Route path='/reports' element={<Noti/>}/> 
          </Routes>
 

@@ -6,9 +6,9 @@ import Delete from "./delete";
 import styled from  './inpuat.css'
 
 
-function Borrowbooks(props){
+function Borrowbooks({props}){
   useEffect(()=>{
-    console.log("successed")
+    console.log(props)
   })
 class Tables extends Component {
   _isMounted = false;
@@ -25,7 +25,7 @@ class Tables extends Component {
     this.getData = this.getData.bind(this);
   }
    getData(){
-      axios.get('https://server-pnhmanager.herokuapp.com/api/helloworld').then(result=>{
+      axios.get('http://localhost:5000/api/helloworld').then(result=>{
          let a = result.data;
           a = a.map(item=>{
             return{
