@@ -44,7 +44,6 @@ function App() {
    <>
       {key=="1223"?  <Router>
   <Navbar ></Navbar>
-  <Sidebar></Sidebar>
   <div className='nd'  style={{height:'85%', display:'flex',flexDirection:'column-reverse',justifyContent:'center'}}>
       <Routes >
    
