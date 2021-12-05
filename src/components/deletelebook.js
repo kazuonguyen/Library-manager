@@ -24,6 +24,7 @@ const Deletebook = ( {close,kk,tt}) => {
     </button>
   
   
+  <div className="header">  </div>
   
     <div className="content" >
      <h1 style={{display:'flex',justifyContent:'center'}}>Xác nhận xoá sách {title}</h1>
