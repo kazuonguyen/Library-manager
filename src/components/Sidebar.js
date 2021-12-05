@@ -4,6 +4,7 @@ import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SideMenuData';
 import './Sidebar.css'
+
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 

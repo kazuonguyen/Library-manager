@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from 'react';
 import './App.css';
-import Navbar from './components/Sidebar';
+import Sidebar from './components/Sidebar123';
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Products from './pages/Products';
@@ -42,7 +42,7 @@ function App() {
   return (
    <>
       {key=="1223"?  <Router>
-  <Navbar ></Navbar>
+  <Sidebar></Sidebar>
   <div className='nd'  style={{height:'85%', display:'flex',flexDirection:'column-reverse',justifyContent:'center'}}>
       <Routes >
    
