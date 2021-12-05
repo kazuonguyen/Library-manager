@@ -7,6 +7,7 @@ import Products from './pages/Products';
 import Borrowbooks from './components/borrowbooks';
 import '../src/components/table.css'
 import Noti from './components/noti';
+import Sidebar from './components/Sidebar123';
   // function test(){
   //   return(
   //     <h1>Hello</h1>
@@ -43,6 +44,7 @@ function App() {
    <>
       {key=="1223"?  <Router>
   <Navbar ></Navbar>
+  <Sidebar></Sidebar>
   <div className='nd'  style={{height:'85%', display:'flex',flexDirection:'column-reverse',justifyContent:'center'}}>
       <Routes >
    
