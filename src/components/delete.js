@@ -13,7 +13,7 @@ const Delete = ({ close }) => {
   const getDB = ()=>{
     let a=name;
     setLoading("Getting data")
-    axios.post("http://localhost:5000/api/delete", {name: a}).then((result)=>{
+    axios.post("https://server-pnhmanager.herokuapp.com/api/delete", {name: a}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
