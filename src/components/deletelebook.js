@@ -12,7 +12,7 @@ const Deletebook = ( {close,kk,tt}) => {
     let a=id;
 
     setLoading("Getting data")
-    axios.post("https://server-pnhmanager.herokuapp.com/api/deletebook", {id:a}).then((result)=>{
+    axios.post("http://localhost:5000/api/deletebook", {id:a}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })

@@ -19,11 +19,12 @@ function App() {
  const [key,setKey]=useState('');
  const [username,setUsername] = useState('');
  const [pass, setPass] = useState('');
+
   useEffect(()=>{
     const rememberMe = localStorage.getItem('rememberMe')
     console.log(rememberMe);
     setKey(rememberMe);
-
+console.log("ssd")
   })
   const  funsetPass = (e)=>{
     setPass(e.target.value);

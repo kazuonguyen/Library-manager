@@ -17,9 +17,7 @@ const Addbook = ({ close }) => {
   const categoryChange =  (e) =>{
     setCategory(e.target.value);
   }
-  const aa = ()=>{
-     console.log(  $("#output").text())
-  }
+
   const [loading, setLoading] = useState('')
   useEffect(() => {
     const script = document.createElement('script');
@@ -35,10 +33,10 @@ const Addbook = ({ close }) => {
   
   const getDB = ()=>{
     let a=title;
-    let b = url;
+    let b = $("#output").text();
     let c = category;
     setLoading("Getting data...")
-    axios.post("https://server-pnhmanager.herokuapp.com/api/addbooks", {url: b , title:a,category:c}).then((result)=>{
+    axios.post("http://localhost:5000/api/addbooks", {url: b , title:a,category:c}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
@@ -63,7 +61,7 @@ const Addbook = ({ close }) => {
     <input type="file" accept="image/*"></input>
    
     </div>
-    <h2   onClick={aa} id="output">sdds</h2>
+    <h2    id="output"></h2>
     <div  style={{display:'flex',justifyContent:'center'}} >
     <select name="categories" value={category} onChange={categoryChange} id="categories">
   <option hidden>Thể loại</option>

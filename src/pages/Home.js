@@ -11,24 +11,31 @@ function Home({props}) {
   const [data,setData] = useState([])
   const [isLoaded, setisLoaded] = useState(false);
   const [req, setReq] = useState(props);
+  const [url,setUrl] = useState('');
   useEffect(()=>{
-    console.log(req);
+    setisLoaded(false);
+    console.log(props);
+    let isMounted = true;       
     if(req==null){
-    axios.get('https://server-pnhmanager.herokuapp.com/api/getbooks').then(result=>{
+    axios.get('http://localhost:5000/api/getbooks').then(result=>{
       let a = result.data;
-      setData(a);
+    if(isMounted){  setData(a);
       setisLoaded(true);
+    }
     })
   }
   else{
-    let aa=req;
-    axios.post('https://server-pnhmanager.herokuapp.com/api/category',{category: aa}).then(result=>{
+    
+    axios.post('http://localhost:5000/api/category',{category: props}).then(result=>{
       let a = result.data;
+      if(isMounted){
       setData(a);
       setisLoaded(true);
+      }
     })
   }
-  })
+  return () => { isMounted = false }; 
+  },[props])
   function renderBookData(){
     return data.map((data, index) => {
       const { _id, url, title } = data

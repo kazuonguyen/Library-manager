@@ -21,7 +21,7 @@ const Content = ({ close }) => {
     let b = age;
     let c = email;
     setLoading("Getting data")
-    axios.post("https://server-pnhmanager.herokuapp.com/api/user", {name: a , age: b, email:c}).then((result)=>{
+    axios.post("http://localhost:5000/api/user", {name: a , age: b, email:c}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
