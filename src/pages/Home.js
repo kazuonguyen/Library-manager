@@ -14,7 +14,7 @@ function Home({props}) {
   useEffect(()=>{
     console.log(req);
     if(req==null){
-    axios.get('http://localhost:5000/api/getbooks').then(result=>{
+    axios.get('https://server-pnhmanager.herokuapp.com/api/getbooks').then(result=>{
       let a = result.data;
       setData(a);
       setisLoaded(true);
@@ -22,7 +22,7 @@ function Home({props}) {
   }
   else{
     let aa=req;
-    axios.post('http://localhost:5000/api/category',{category: aa}).then(result=>{
+    axios.post('https://server-pnhmanager.herokuapp.com/api/category',{category: aa}).then(result=>{
       let a = result.data;
       setData(a);
       setisLoaded(true);
