@@ -17,7 +17,7 @@ function Home({props}) {
     console.log(props);
     let isMounted = true;       
     if(req==null){
-    axios.get('http://localhost:5000/api/getbooks').then(result=>{
+    axios.get('https://server-pnhmanager.herokuapp.com/api/getbooks').then(result=>{
       let a = result.data;
     if(isMounted){  setData(a);
       setisLoaded(true);
@@ -26,7 +26,7 @@ function Home({props}) {
   }
   else{
     
-    axios.post('http://localhost:5000/api/category',{category: props}).then(result=>{
+    axios.post('https://server-pnhmanager.herokuapp.com/api/category',{category: props}).then(result=>{
       let a = result.data;
       if(isMounted){
       setData(a);
