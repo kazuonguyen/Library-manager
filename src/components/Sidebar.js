@@ -9,7 +9,7 @@ import { IconContext } from 'react-icons/lib';
 import  './Sidebar.css'
 
 const Nav = styled.div`
-  background: rgb(53, 181, 240);
+  background:  #edf5ef;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -26,7 +26,9 @@ const NavIcon = styled(Link)`
 `;
 
 const SidebarNav = styled.nav`
-  background: #15171c;
+  background: white;
+  color: black;
+  text-color:black;
   width: 250px;
   height: 100vh;
   display: flex;
@@ -52,13 +54,14 @@ const Sidebar = () => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavIcon to='#'>
-            <FaIcons.FaBars onClick={showSidebar} />
+            <FaIcons.FaBars style={{color:'black'}} onClick={showSidebar} />
           </NavIcon>
+          <h1>&nbsp; App manager</h1>
         </Nav>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to='#'>
-              <AiIcons.AiOutlineClose onClick={showSidebar} />
+              <AiIcons.AiOutlineClose style={{color:'black'}} onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;

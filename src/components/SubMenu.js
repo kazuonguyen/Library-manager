@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const SidebarLink = styled(Link)`
   display: flex;
-  color: #e1e9fc;
+  color: black;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -13,8 +13,8 @@ const SidebarLink = styled(Link)`
   text-decoration: none;
   font-size: 18px;
   &:hover {
-    background: #252831;
-    border-left: 4px solid #632ce4;
+    background: #white;
+    border-left: 4px solid #57e188;
     cursor: pointer;
   }
 `;
@@ -22,18 +22,20 @@ const SidebarLink = styled(Link)`
 const SidebarLabel = styled.span`
   margin-left: 16px;
 `;
-
+const Iconn = styled.svg`
+  color:black;
+`
 const DropdownLink = styled(Link)`
-  background: #414757;
+  background: white;
   height: 60px;
   padding-left: 3rem;
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #f5f5f5;
+  color: black;
   font-size: 18px;
   &:hover {
-    background: #632ce4;
+    background:#57e188;
     cursor: pointer;
   }
 `;
@@ -45,12 +47,12 @@ const SubMenu = ({ item }) => {
 
   return (
     <>
-      <SidebarLink to={item.path} onClick={item.subNav && showSubnav}>
-        <div>
-          {item.icon}
+      <SidebarLink  to={item.path} onClick={item.subNav && showSubnav}>
+        <div >
+         {item.icon}
           <SidebarLabel>{item.title}</SidebarLabel>
         </div>
-        <div>
+        <div id="nnc">
           {item.subNav && subnav
             ? item.iconOpened
             : item.subNav
@@ -63,7 +65,7 @@ const SubMenu = ({ item }) => {
           return (
             <DropdownLink to={item.path} key={index}>
               {item.icon}
-              <SidebarLabel>{item.title}</SidebarLabel>
+              <SidebarLabel >{item.title}</SidebarLabel>
             </DropdownLink>
           );
         })}

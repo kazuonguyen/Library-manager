@@ -38,13 +38,15 @@ function Home({props}) {
   },[props])
   function renderBookData(){
     return data.map((data, index) => {
-      const { _id, url, title } = data
+      const { _id, url, title,category } = data
       return (
       <Popup key={_id.toString()} trigger={        <div  className="gallery">
 
         <img src={url} alt="Forest" width="600" height="400"></img>
-      <div className="desc">{title}</div>
-    
+      <div className="desc"><h2>{title}</h2>
+      <h4>&bull;{category}</h4>
+      </div>
+        
     </div>} modal
     nested
     >

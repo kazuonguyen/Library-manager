@@ -95,7 +95,7 @@ class Tables extends Component {
     return (
         
         <div style={{width:'100%', display:'flex',alignItems:'center',justifyContent:'center'}}>
-            <div style={{height:'auto',width:'75%', minWidth:'400px', backgroundColor:'white', paddingTop:'25px', borderRadius:'30px'}}>
+            <div style={{height:'auto',width:'75%', minWidth:'400px', backgroundColor:'white', paddingTop:'25px', borderRadius:'30px',boxShadow: '5px 10px 8px #888888'}}>
         <h3 style={{display:'flex', justifyContent:'center'}}>Số người mượn sách:</h3>
         <Tables></Tables>
         <div style={{display:'flex',justifyContent:'center'}}  >

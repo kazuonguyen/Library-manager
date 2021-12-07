@@ -5,7 +5,7 @@
     padding: 8px;
   }
   
-  #students tr:nth-child(even){background-color: #a2f39b;}
+  #students tr:nth-child(even){background-color: #ffffff;}
   
   #students tr:hover {background-color: rgb(216, 252, 207);}
   

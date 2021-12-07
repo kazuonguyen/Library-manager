@@ -1,12 +1,4 @@
-.bcVtPN:hover {
-    background: #252831;
-    border-left: 4px solid #2cb0e4  !important ;
-    cursor: pointer;
-}
-.ljykzy:hover {
-    background: #2cb0e4  !important;
-    cursor: pointer;
-}
-.bcVtPN{
-    color: white  !important;
+
+svg{
+    color: black !important;
 }
