@@ -234,10 +234,11 @@ div.gallery {
   width: 250px;
   padding: 8px;
   border-radius: 20px;
-
+  transition: 0.5s;
 }
 div.gallery:hover{
   cursor: pointer;
+  filter: brightness(80%);
 }
 
 

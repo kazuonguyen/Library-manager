@@ -54,14 +54,14 @@ const Sidebar = () => {
       <IconContext.Provider value={{ color: '#fff' }}>
         <Nav>
           <NavIcon to='#'>
-            <FaIcons.FaBars style={{color:'black'}} onClick={showSidebar} />
+            <FaIcons.FaBars className="iconSidebar" onClick={showSidebar} />
           </NavIcon>
           <h1>&nbsp; App manager</h1>
         </Nav>
         <SidebarNav sidebar={sidebar}>
-          <SidebarWrap>
+          <SidebarWrap  style={{    boxShadow: '5px 10px 8px #888888'}} >
             <NavIcon to='#'>
-              <AiIcons.AiOutlineClose style={{color:'black'}} onClick={showSidebar} />
+              <AiIcons.AiOutlineClose className="iconSidebar" onClick={showSidebar} />
             </NavIcon>
             {SidebarData.map((item, index) => {
               return <SubMenu item={item} key={index} />;

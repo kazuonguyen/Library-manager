@@ -43,7 +43,7 @@ console.log("ssd")
   return (
    <>
       {key=="1223"?  <Router>
-  <Navbar ></Navbar>
+  <Navbar></Navbar>
   <div className='nd'  style={{height:'85%', display:'flex',flexDirection:'column-reverse',justifyContent:'center'}}>
       <Routes >
    

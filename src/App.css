@@ -63,3 +63,41 @@
 button{
   border-radius: 30px !important;
 }
+button.close:focus-visible{
+  outline: none;
+}
+/* For the "inset" look only */
+html {
+  overflow: auto;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  border: 5px solid transparent;
+
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(15, 236, 107, 0.8); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: rgba(11, 150, 73, 0.4); 
+}
+.iconSidebar>path{
+  color: rgb(75, 236, 124) !important;
+}
