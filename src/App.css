@@ -104,3 +104,6 @@ background: rgba(11, 150, 73, 0.4);
 body{
   user-select: none;
 }
+a{
+  -webkit-user-drag: none;
+}
