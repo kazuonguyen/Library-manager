@@ -58,7 +58,7 @@ function Home({props}) {
   return (
     <>
     <div style={{width:'100%',textAlign:'center'}}>
-      <Popup trigger={      <button className="button btnn">Add</button>}
+      <Popup trigger={      <button className="button btnn">Thêm sách</button>}
       modal
       nested
       >

@@ -29,7 +29,7 @@ class Tables extends Component {
           d1 = new Date(d1.setMonth(d1.getMonth()+3))
       
             var d2  = new Date(); 
-             return d1>d2;
+             return d1<d2;
          })
           a = a.map(item=>{
             return{
@@ -100,7 +100,7 @@ class Tables extends Component {
         <div style={{width:'100%', display:'flex',alignItems:'center',justifyContent:'center',maxHeight:'100%'}}>
             <div style={{width:'75%', minWidth:'400px', backgroundColor:'white', paddingTop:'25px', borderRadius:'30px',boxShadow: '5px 10px 8px #888888',position: 'relative',
 height: 'fit-content',overflow: 'auto',maxHeight:'100%'}}>
-        <h3 style={{display:'flex', justifyContent:'center'}}>Số người mượn sách:</h3>
+        <h3 style={{display:'flex', justifyContent:'center'}}>Số người hết hạn</h3>
         <Tables></Tables>
         <div style={{display:'flex',justifyContent:'center'}}  >
         
