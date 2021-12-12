@@ -15,7 +15,7 @@ const Delete = ({ close }) => {
     a = a.replace(/\s/g, '');
 
     setLoading("Getting data")
-    axios.post("https://server-pnhmanager.herokuapp.com/api/delete", {name: a}).then((result)=>{
+    axios.post("https://server-manager456.herokuapp.com/api/delete", {name: a}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })

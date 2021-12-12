@@ -25,7 +25,7 @@ class Tables extends Component {
     this.getData = this.getData.bind(this);
   }
    getData(){
-      axios.get('https://server-pnhmanager.herokuapp.com/api/helloworld').then(result=>{
+      axios.get('https://server-manager456.herokuapp.com/api/helloworld').then(result=>{
          let a = result.data;
           a = a.map(item=>{
             return{
