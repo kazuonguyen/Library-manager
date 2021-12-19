@@ -32,8 +32,8 @@ class Tables extends Component {
               id: item._id.toString(),
               name: item.name,
               age: item.age,
-              email: item.email
-
+              email: item.email,
+              phone: item.phone
             }
           })
           if(this._isMounted){
@@ -59,20 +59,21 @@ class Tables extends Component {
       
       renderTableData() {
     return this.state.students.map((student, index) => {
-      const { id, name, age, email } = student
+      const { id, name, age, email,phone } = student
       return (
         <tr style={{userSelect:'text'}}  key={id}>
           <td>{id}</td>
           <td>{name}</td>
           <td>{age}</td>
           <td>{email}</td>
+          <td>{phone}</td>
         </tr>
       )
     })
   }
 
   renderTableHeader() {
-    const header = ["id","name","book(s)","date"]
+    const header = ["id","name","book(s)","date","Phone"]
     return header.map((key, index) => <th   key={index}>{key.toUpperCase()}</th>)
   }
 

@@ -3,6 +3,7 @@ import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
 import * as IoIcons from 'react-icons/io';
 import * as RiIcons from 'react-icons/ri';
+import * as BsIcons from "react-icons/bs";
 
 export const SidebarData = [
   {
@@ -33,15 +34,14 @@ export const SidebarData = [
   {
     title: 'Thông báo',
     path: '/reports',
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
+    icon: <RiIcons.RiNotificationBadgeFill />,
+    
 
     
   },
   {
     title: 'Tất cả người mượn',
     path: '/products',
-    icon: <FaIcons.FaCartPlus />
+    icon: <BsIcons.BsFillPeopleFill />
   }
 ];

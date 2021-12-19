@@ -5,7 +5,7 @@ const Content = ({ close }) => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [email, setEmail]  = useState('');
-
+  const [phone, setPhone] = useState('');
   const  nameChange= (e)=>{
       setName(e.target.value);
   }
@@ -15,13 +15,17 @@ const Content = ({ close }) => {
   const emailChange = (e)=>{
     setEmail(e.target.value)
   }
+  const phoneChange = (e)=>{
+    setPhone(e.target.value)
+  }
   const [loading, setLoading] = useState('')
   const getDB = ()=>{
     let a=name;
     let b = age;
     let c = email;
+    let d = phone;
     setLoading("Getting data")
-    axios.post("https://server-manager456.herokuapp.com/api/user", {name: a , age: b, email:c}).then((result)=>{
+    axios.post("https://server-manager456.herokuapp.com/api/user", {name: a , age: b, email:c,phone:d}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
@@ -46,6 +50,9 @@ const Content = ({ close }) => {
     </div>
     <div  style={{display:'flex',justifyContent:'center'}} >
      <input  value={email} onChange={emailChange} placeholder='date'></input>
+    </div>
+    <div  style={{display:'flex',justifyContent:'center'}} >
+     <input  value={phone} onChange={phoneChange} placeholder='phone'></input>
     </div>
     <div  style={{display:'flex',justifyContent:'center'}} >
     <p>{loading}</p>
