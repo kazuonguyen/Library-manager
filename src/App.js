@@ -22,9 +22,7 @@ function App() {
 
   useEffect(()=>{
     const rememberMe = localStorage.getItem('rememberMe')
-    console.log(rememberMe);
     setKey(rememberMe);
-console.log("ssd")
   })
   const  funsetPass = (e)=>{
     setPass(e.target.value);
@@ -33,7 +31,7 @@ console.log("ssd")
     setUsername(e.target.value);
   }
   const submitForm = ()=>{
-    if(username==="hungtvt2222@gmail.com"&&pass==="22445588"){
+    if(username==="pnhthuquan@gmail"&&pass==="pnhthuquan"){
       testLocal();
       const rememberMe = localStorage.getItem('rememberMe')
       setKey(rememberMe);
