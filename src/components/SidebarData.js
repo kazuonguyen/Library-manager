@@ -28,7 +28,31 @@ export const SidebarData = [
         title: 'Khoa học',
         path: '/khoahoc',
         icon: <IoIcons.IoIosPaper />
-      }
+      },
+      {
+        title: 'Văn học VN',
+        path: '/vanhoc',
+        icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Văn học nước ngoài',
+        path: '/vanhocnc',
+        icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Truyện ngắn nước ngoài',
+        path: '/trngannc',
+        icon: <IoIcons.IoIosPaper />
+      }, {
+        title: 'Tiểu thuyết',
+        path: '/tieuthuyet',
+        icon: <IoIcons.IoIosPaper />
+      },
+      {
+        title: 'Sách tổng hợp',
+        path: '/sachtonghop',
+        icon: <IoIcons.IoIosPaper />
+      },
     ]
   },
   {

@@ -50,7 +50,12 @@ function App() {
       <Route exact path='/sgk'    element={<Home props="Sách giáo khoa" key={window.location.pathname}/>}/>
       <Route exact path='/truyentranh'    element={<Home props="Truyện tranh" key={window.location.pathname}/>}/>
       <Route exact path='/khoahoc'    element={<Home props="Khoa học" key={window.location.pathname}/>}/>
-
+      <Route exact path='/vanhoc'    element={<Home props="Văn học VN" key={window.location.pathname}/>}/>
+      <Route exact path='/vanhocnc'    element={<Home props="Văn học nước ngoài" key={window.location.pathname}/>}/>
+      <Route exact path='/trnganvn'    element={<Home props="Truyện ngắn VN" key={window.location.pathname}/>}/>
+      <Route exact path='/trngannc'    element={<Home props="Truyện ngắn nước ngoài" key={window.location.pathname}/>}/>
+      <Route exact path='/tieuthuyet'    element={<Home props="Tiểu thuyết" key={window.location.pathname}/>}/>
+      <Route exact path='/sachtonghop'    element={<Home props="Sách tổng hợp" key={window.location.pathname}/>}/>
           <Route path='/products' element={<Borrowbooks props={null}/>}/> 
          <Route path='/reports' element={<Noti/>}/> 
          </Routes>

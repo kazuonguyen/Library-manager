@@ -65,10 +65,15 @@ const Addbook = ({ close }) => {
     <div  style={{display:'flex',justifyContent:'center'}} >
     <select name="categories" value={category} onChange={categoryChange} id="categories">
   <option hidden>Thể loại</option>
-  <option value="ABC">ABC</option>
   <option value="Truyện tranh">Truyện tranh</option>
   <option value="Khoa học">Khoa học</option>
   <option value="Sách giáo khoa">Sách giáo khoa</option>
+  <option value="Văn học VN">Văn học VN</option>
+  <option value="Văn học nước ngoài">Văn học nước ngoài</option>
+  <option value="Truyện ngắn nước ngoài">Truyện ngắn nước ngoài</option>
+  <option value="Tiểu thuyết">Tiểu thuyết</option>
+  <option value="Sách tổng hợp">Sách tổng hợp</option>
+
 </select>
     </div>
 
