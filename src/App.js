@@ -66,21 +66,21 @@ function App() {
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
 
 <div style={{width:'500px',backgroundColor:'white',padding:'5px',borderRadius:'25px '}}>
-                <h3 style={{textAlign:'center'}}>Sign In</h3>
+                <h3 style={{textAlign:'center'}}>Đăng nhập</h3>
 
                 <div className="form-group">
-                    <label>Email address</label>
-                    <input onChange={funsetUser} value={username} type="email" className="form-control" placeholder="Enter email" />
+                    <label>Email</label>
+                    <input onChange={funsetUser} value={username} type="email" className="form-control"  placeholder="Nhập email" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
-                    <input onChange={funsetPass} value={pass} type="password" className="form-control" placeholder="Enter password" />
+                    <label>Mật khẩu</label>
+                    <input onChange={funsetPass} value={pass} type="password" className="form-control" placeholder="Nhập mật khẩu" />
                 </div>
 
                
 
-                <button style={{width:'50%',margin:'0 25% 0 25%'}} type="submit" onClick={submitForm} className="btn btn-primary ">Submit</button>
+                <button style={{width:'50%',margin:'0 25% 0 25%'}} type="submit" onClick={submitForm} className="btn btn-success ">Đăng nhập</button>
          
          </div>
             </form>

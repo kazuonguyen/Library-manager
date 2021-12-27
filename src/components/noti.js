@@ -76,7 +76,7 @@ class Tables extends Component {
   }
 
   renderTableHeader() {
-    const header = ["id","name","book(s)","Date","phone"]
+    const header = ["id","Tên","Sách","Ngày mượn","SĐT"]
     return header.map((key, index) => <th  key={index}>{key.toUpperCase()}</th>)
   }
 

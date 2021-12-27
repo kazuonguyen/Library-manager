@@ -71,6 +71,8 @@ const Addbook = ({ close }) => {
   <option value="Văn học VN">Văn học VN</option>
   <option value="Văn học nước ngoài">Văn học nước ngoài</option>
   <option value="Truyện ngắn nước ngoài">Truyện ngắn nước ngoài</option>
+  <option value="Truyện ngắn nước ngoài">Truyện ngắn nước ngoài</option>
+  <option value="Truyện ngắn VN">Truyện ngắn VN</option>
   <option value="Tiểu thuyết">Tiểu thuyết</option>
   <option value="Sách tổng hợp">Sách tổng hợp</option>
 

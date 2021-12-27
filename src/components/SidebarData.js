@@ -43,7 +43,13 @@ export const SidebarData = [
         title: 'Truyện ngắn nước ngoài',
         path: '/trngannc',
         icon: <IoIcons.IoIosPaper />
-      }, {
+      }, 
+      {
+        title: 'Truyện ngắn VN',
+        path: '/trnganvn',
+        icon: <IoIcons.IoIosPaper />
+      }, 
+      {
         title: 'Tiểu thuyết',
         path: '/tieuthuyet',
         icon: <IoIcons.IoIosPaper />
