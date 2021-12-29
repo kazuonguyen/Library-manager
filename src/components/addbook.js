@@ -49,7 +49,6 @@ const Addbook = ({ close }) => {
     </button>
   
   
-  <div className="header"> {url} </div>
   
     <div className="content" >
      <h1 style={{display:'flex',justifyContent:'center'}}>Thông tin sách</h1>
@@ -90,15 +89,7 @@ const Addbook = ({ close }) => {
          <button  onClick={getDB} className='button btnn'>Thêm</button>
    
      
-      <button
-        className="button btnn"
-        onClick={() => {
-          console.log('modal closed ');
-          close();
-        }}
-      >
-        Thoát
-      </button>
+  
     </div>
     
   </div>

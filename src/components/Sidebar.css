@@ -2,3 +2,6 @@
 svg{
     color: black !important;
 }
+.iconSidebar:hover{
+    filter: brightness(50%);
+}

@@ -47,15 +47,7 @@ const Delete = ({ close }) => {
          <button  onClick={getDB} className='button btnn'>Xóa</button>
    
      
-      <button
-        className="button btnn"
-        onClick={() => {
-          console.log('modal closed ');
-          close();
-        }}
-      >
-        Thoát
-      </button>
+      
     </div>
   </div>
 

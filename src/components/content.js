@@ -55,17 +55,17 @@ const Content = ({ close }) => {
     <div className="content" >
      <h1 style={{display:'flex',justifyContent:'center'}}>Thông tin người mượn</h1>
     <div  style={{display:'flex',justifyContent:'center'}} >
-       <input value={name} onChange={nameChange} placeholder='username'></input>
+       <input value={name} onChange={nameChange} placeholder='Tên người mượn'></input>
        </div>
     
     <div  style={{display:'flex',justifyContent:'center'}} >
-     <input value={age} onChange={ageChange}  placeholder='book(s)'></input>
+     <input value={age} onChange={ageChange}  placeholder='Tên sách'></input>
     </div>
     <div  style={{display:'flex',justifyContent:'center'}} >
-     <input  value={email} onChange={emailChange} placeholder='date'></input>
+     <input  value={email} onChange={emailChange} placeholder='Ngày mượn (Vd: 9-12-2021)'></input>
     </div>
     <div  style={{display:'flex',justifyContent:'center'}} >
-     <input  value={phone} onChange={phoneChange} placeholder='phone'></input>
+     <input  value={phone} onChange={phoneChange} placeholder='Số điện thoại'></input>
     </div>
     <div  style={{display:'flex',justifyContent:'center'}} >
     <p>{loading}</p>

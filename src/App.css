@@ -114,3 +114,7 @@ a{
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(38, 223, 146, 0.25) !important;
 }
+.close:hover{
+  filter: brightness(50%);
+  transition: 0.25s;
+}
