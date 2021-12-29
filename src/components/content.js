@@ -19,13 +19,26 @@ const Content = ({ close }) => {
     setPhone(e.target.value)
   }
   const [loading, setLoading] = useState('')
+  function convertDay(a){
+    let  tm=0;
+     let day='',month='',year='';
+      for(let i=0;i<=a.length-1;i++){
+        if(a[i]!='-'){
+          if(tm==0)  month+=a[i];
+          else if(tm==1) day+=a[i];
+          else if(tm==2) year+=a[i];
+        }
+        else tm++;
+      }
+      return day+'-'+month+'-'+year;
+    }
   const getDB = ()=>{
     let a=name;
     let b = age;
     let c = email;
     let d = phone;
     setLoading("Getting data")
-    axios.post("https://server-manager456.herokuapp.com/api/user", {name: a , age: b, email:c,phone:d}).then((result)=>{
+    axios.post("https://server-manager456.herokuapp.com/api/user", {name: a , age: b, email:convertDay(c),phone:d}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })

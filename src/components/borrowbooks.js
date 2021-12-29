@@ -24,6 +24,19 @@ class Tables extends Component {
     }
     this.getData = this.getData.bind(this);
   }
+   convertDay(a){
+  let  tm=0;
+   let day='',month='',year='';
+    for(let i=0;i<=a.length-1;i++){
+      if(a[i]!='-'){
+        if(tm==0)  month+=a[i];
+        else if(tm==1) day+=a[i];
+        else if(tm==2) year+=a[i];
+      }
+      else tm++;
+    }
+    return day+'-'+month+'-'+year;
+  }
    getData(){
       axios.get('https://server-manager456.herokuapp.com/api/helloworld').then(result=>{
          let a = result.data;
@@ -32,7 +45,7 @@ class Tables extends Component {
               id: item._id.toString(),
               name: item.name,
               age: item.age,
-              email: item.email,
+              email: this.convertDay(item.email),
               phone: item.phone
             }
           })
