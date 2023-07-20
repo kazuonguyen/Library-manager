@@ -38,7 +38,7 @@ const Content = ({ close }) => {
     let c = email;
     let d = phone;
     setLoading("Getting data")
-    axios.post("https://server-manager456.herokuapp.com/api/user", {name: a , age: b, email:convertDay(c),phone:d}).then((result)=>{
+    axios.post("https://node-express-vercel-zeta-eight.vercel.app/api/user", {name: a , age: b, email:convertDay(c),phone:d}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
