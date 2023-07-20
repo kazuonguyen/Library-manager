@@ -39,7 +39,7 @@ class Tables extends Component {
          let a = result.data;
  a = a.filter(items=>{
           var d1 = new Date(items.email);
-          d1 = new Date(d1.setMonth(d1.getMonth()+3))
+          d1 = new Date(d1.setMonth(d1.getMonth()))
       
             var d2  = new Date(); 
              return d1<d2;
