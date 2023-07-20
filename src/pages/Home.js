@@ -17,7 +17,7 @@ function Home({props}) {
     console.log(props);
     let isMounted = true;       
     if(req==null){
-    axios.get('https://server-manager456.herokuapp.com/api/getbooks').then(result=>{
+    axios.get('https://node-express-vercel-zeta-eight.vercel.app/home/api/getbooks').then(result=>{
       let a = result.data;
     if(isMounted){  setData(a);
       setisLoaded(true);
