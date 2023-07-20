@@ -26,7 +26,7 @@ function Home({props}) {
   }
   else{
     
-    axios.post('https://server-manager456.herokuapp.com/api/category',{category: props}).then(result=>{
+    axios.post('https://node-express-vercel-zeta-eight.vercel.app/home/api/category',{category: props}).then(result=>{
       let a = result.data;
       if(isMounted){
       setData(a);
