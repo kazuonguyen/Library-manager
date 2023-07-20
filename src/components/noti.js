@@ -44,6 +44,7 @@ class Tables extends Component {
             var d2  = new Date(); 
              return d1<d2;
          })
+        console.log(a);
           a = a.map(item=>{
             return{
               id: item._id.toString(),
