@@ -38,7 +38,7 @@ class Tables extends Component {
       axios.get('https://node-express-vercel-zeta-eight.vercel.app/home/api/helloworld').then(result=>{
          let a = result.data;
         console.log(a);
- a = await a.filter(items=>{
+ a =  a.filter(await items=>{
           var d1 = new Date(items.email);
           d1 = new Date(d1.setMonth(d1.getMonth()))
       
