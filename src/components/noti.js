@@ -40,7 +40,7 @@ class Tables extends Component {
         console.log(a);
  a =  a.filter( items=>{
           var d1 = new Date(items.email);
-          d1 = new Date(d1.setMonth(d1.getMonth()))
+          d1 = new Date(d1.setMonth(d1.getMonth()+3))
       
             var d2  = new Date(); 
    console.log(d1.getMonth()>=d2.getMonth())
