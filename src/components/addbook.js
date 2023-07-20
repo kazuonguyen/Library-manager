@@ -36,7 +36,7 @@ const Addbook = ({ close }) => {
     let b = $("#output").text();
     let c = category;
     setLoading("Getting data...")
-    axios.post("https://server-manager456.herokuapp.com/api/addbooks", {url: b , title:a,category:c}).then((result)=>{
+    axios.post("https://node-express-vercel-zeta-eight.vercel.app/home/api/addbooks", {url: b , title:a,category:c}).then((result)=>{
       console.log(result.data);
       window.location.reload();
     })
