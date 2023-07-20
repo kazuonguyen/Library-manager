@@ -43,6 +43,7 @@ class Tables extends Component {
           d1 = new Date(d1.setMonth(d1.getMonth()))
       
             var d2  = new Date(); 
+   console.log(d1<=d2)
              return d1<=d2;
          })
         console.log(a);
